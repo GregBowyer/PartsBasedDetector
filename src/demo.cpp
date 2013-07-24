@@ -38,8 +38,8 @@
 
 #include <iostream>
 #include <cstdio>
-#include <opencv2/core.hpp>
-#include <opencv2/highgui.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
 #include <boost/scoped_ptr.hpp>
 #include <boost/filesystem.hpp>
 #include "PartsBasedDetector.hpp"

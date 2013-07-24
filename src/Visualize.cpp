@@ -38,7 +38,8 @@
 
 #include <cstdio>
 #include <iostream>
-#include <opencv2/imgproc.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
 #include <boost/lexical_cast.hpp>
 #include "Visualize.hpp"
 using namespace cv;
@@ -123,6 +124,6 @@ void Visualize::candidates(const Mat& im, const Candidate& candidate, Mat& canva
 void Visualize::image(const Mat& im) const {
     Mat canvas;
     cvtColor(im, canvas, COLOR_RGB2BGR);
-	namedWindow(name_, WINDOW_NORMAL | WINDOW_KEEPRATIO);
+	namedWindow(name_, CV_WINDOW_NORMAL | CV_WINDOW_KEEPRATIO);
 	imshow(name_, canvas);
 }

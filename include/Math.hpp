@@ -41,7 +41,7 @@
 
 #include <cassert>
 #include <vector>
-#include <opencv2/core.hpp>
+#include <opencv2/core/core.hpp>
 #include <iostream>
 #include "types.hpp"
 /*
